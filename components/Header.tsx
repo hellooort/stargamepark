@@ -30,17 +30,7 @@ const nav = [
   {
     label: "게임기안내",
     href: "/products",
-    sub: [
-      { label: "레이싱 게임기", href: "/products?cat=레이싱" },
-      { label: "건슈팅 게임기", href: "/products?cat=건슈팅" },
-      { label: "리듬 게임기", href: "/products?cat=리듬" },
-      { label: "경품 게임기", href: "/products?cat=경품" },
-      { label: "스포츠 게임기", href: "/products?cat=스포츠" },
-      { label: "어드벤처 게임기", href: "/products?cat=어드벤처" },
-      { label: "인형뽑기 게임기", href: "/products?cat=인형뽑기" },
-      { label: "캐주얼 게임기", href: "/products?cat=캐주얼" },
-      { label: "수출 상담 문의", href: "/contact?type=export" },
-    ],
+    sub: [],
   },
   {
     label: "커뮤니티",
@@ -54,11 +44,7 @@ const nav = [
   {
     label: "고객상담",
     href: "/contact",
-    sub: [
-      { label: "고객상담", href: "/contact" },
-      { label: "오락실 창업 사례", href: "/contact/cases" },
-      { label: "인형뽑기 창업문의", href: "/contact?type=doll" },
-    ],
+    sub: [],
   },
 ];
 
@@ -111,7 +97,7 @@ export default function Header() {
                 {item.label}
               </Link>
               {/* 드롭다운 */}
-              {hovered === i && (
+              {hovered === i && item.sub.length > 0 && (
                 <div className="absolute top-full left-0 w-44 bg-[#0d0d1a] border border-[#1e1e38] rounded-lg py-1 shadow-xl">
                   {item.sub.map((s, j) => (
                     <Link

@@ -19,15 +19,14 @@ export default function LocationPage() {
       <main className="bg-[#0d0d1a]">
         <section className="max-w-7xl mx-auto px-6 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            {/* 지도 (카카오맵 임베드) */}
-            <div className="rounded-xl overflow-hidden border border-[#1e1e38] aspect-video bg-[#12121f] flex items-center justify-center">
-              <iframe
-                src="https://map.kakao.com/link/map/스타게임파크,37.5675,126.9956"
-                width="100%" height="100%"
-                title="스타게임파크 위치"
-                className="w-full h-full"
-                loading="lazy"
-              />
+            {/* 지도 (카카오맵 임베드 대신 이미지 placeholder) */}
+            <div className="rounded-xl overflow-hidden border border-[#1e1e38] aspect-video bg-[#12121f] flex flex-col items-center justify-center text-[#6b6b8a]">
+              <svg className="w-12 h-12 mb-3 opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21 15 16 10 5 21"/>
+              </svg>
+              <p className="font-bold text-lg">지도 연동 예정</p>
             </div>
             {/* 주소 정보 */}
             <div className="space-y-5">

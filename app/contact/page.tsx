@@ -2,14 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingBtn from "@/components/FloatingBtn";
 import PageBanner from "@/components/PageBanner";
-import SubNav from "@/components/SubNav";
 import Contact from "@/components/Contact";
-
-const tabs = [
-  { label: "고객상담", href: "/contact" },
-  { label: "오락실 창업 사례", href: "/contact/cases" },
-  { label: "인형뽑기 창업문의", href: "/contact?type=doll" },
-];
 
 const notices = [
   { tag: "창업안내", title: "인형뽑기방 창업에 관하여 알려 드립니다." },
@@ -24,7 +17,6 @@ export default function ContactPage() {
     <>
       <Header />
       <PageBanner label="고객상담" title="고객상담" desc="사장님들의 성공적인 창업을 위해 최선을 다하겠습니다." />
-      <SubNav tabs={tabs} current="/contact" />
       <main className="bg-[#0d0d1a]">
         {/* 공지사항 */}
         <section className="max-w-7xl mx-auto px-6 py-12">
