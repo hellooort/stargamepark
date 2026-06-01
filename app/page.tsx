@@ -17,7 +17,7 @@ export default function HomePage() {
         <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/images/hero-bg-korean.png')" }}
+            style={{ backgroundImage: "url('/images/hero-bg-notext.png')" }}
           >
             <div className="absolute inset-0 bg-[#07070e]/80" />
             <div className="hero-grid-bg absolute inset-0 opacity-50" />
