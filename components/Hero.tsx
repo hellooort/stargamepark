@@ -4,7 +4,7 @@ export default function Hero() {
       {/* 배경 */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+        style={{ backgroundImage: "url('/images/hero-bg-korean.png')" }}
       >
         <div className="absolute inset-0 bg-[#07070e]/80" />
         <div className="hero-grid-bg absolute inset-0 opacity-50" />
